@@ -1,7 +1,7 @@
 body {
     background-color: rgb(15, 23, 42);
     color: white;
-    font-size: 40px;
+    font-size: 16px;
     font-family: roboto;
     margin: 0;
     padding: 0;
@@ -283,3 +283,44 @@ grid-template-columns: 1fr;
     object-fit: cover;
     border-radius: 50%;
 }
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    #home h1,
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    #about h2,
+    #skills h2,
+    #projects h2,
+    #contact h2,
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    section h3,
+    .skill-card h3,
+    .project-card h3 {
+        font-size: 24px;
+    }
+
+    button,
+    .button {
+        font-size: 18px;
+    }
+}
+
