@@ -285,23 +285,27 @@ grid-template-columns: 1fr;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     body {
-        font-size: 18px;
+        font-size: 22px;
         line-height: 1.7;
     }
 
     p {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     nav a {
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 34px;
     }
 
     #home h1,
     .hero h1 {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     #about h2,
@@ -309,18 +313,17 @@ grid-template-columns: 1fr;
     #projects h2,
     #contact h2,
     .hero h2 {
-        font-size: 36px;
+        font-size: 38px;
     }
 
     section h3,
     .skill-card h3,
     .project-card h3 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     button,
     .button {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
-
