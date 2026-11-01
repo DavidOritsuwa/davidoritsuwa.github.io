@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Study Quest</h1>
+        <nav>
+            <a href="index.html">Back to That's David</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tasks">
+            <h2>My Study Tasks</h2>
+            <p>Points: <span id="score">0</span></p>
+            <p id="level-message">Level 1 — Keep going!</p>
+            <p id="streak-display">Daily streak: 0 days</p>
+            <p id="reward-message">Complete a task to earn a surprise!</p>
+            <p id="badge-message">Badge: Locked — complete 5 tasks to earn Task Master!</p>
+        <div class="badge-progress-track">
+            <div id="badge-progress-fill"></div>
+        </div>
+        <p id="badge-progress-text">0 of 5 tasks completed</p>
+
+            <form id="task-form">
+                <label for="task-input">What do you need to study?</label>
+                <input id="task-input" type="text" placeholder="Example: Review HTML" required>
+                <button type="submit">Add Task</button>
+            </form>
+
+            <ul id="task-list"></ul>
+        </section>
+
+        <section id="timer">
+            <h2>Study Timer</h2>
+            <label for="custom-minutes">Study time (minutes):</label>
+            <input id="custom-minutes" type="number" min="1" max="120" value="25">
+            <button id="set-time-button" type="button">Set Time</button>
+            <p id="timer-display">25:00</p>
+            <div class="progress-track">
+            <div id="timer-progress"></div>
+            </div>
+            <button id="start-button">Start</button>
+            <button id="pause-button">Pause</button>
+            <button id="reset-button">Reset</button>
+        </section>
+    </main>
+
+    <script src="study-quest.js"></script>
+</body>
+</html>
