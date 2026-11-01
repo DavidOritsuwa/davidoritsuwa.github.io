@@ -53,8 +53,10 @@
 
     if (completedCount >= 5) {
         badgeMessage.textContent = "🏅 Badge unlocked: Task Master!";
+        badgeMessage.classList.add("badge-unlocked");
     } else {
         const remaining = 5 - completedCount;
+        badgeMessage.classList.remove("badge-unlocked");
         badgeMessage.textContent =
             "Badge: Locked — complete " + remaining +
             " more task(s) to earn Task Master!";
